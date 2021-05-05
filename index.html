@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            chat application
+        </title>
+        <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="client.js"></script>
+        <style>
+            /* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+    
+</style>
+    </head>
+<body>
+    <div class="split left">
+            <iframe src="user1.html" width="700" height="90%" ></iframe>       
+      </div>
+      
+      <div class="split right">
+        
+            <iframe src="user2.html" width="700" height="90%"></iframe>
+        
+      </div>
+</body>
+</html
